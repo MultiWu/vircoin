@@ -1,0 +1,11 @@
+name: vircoin
+version: "0.1dev"
+summary: Vircoin
+description: Vircoin Cryptocurrency Project
+grade: devel
+confinement: devmode
+
+parts:
+  vircoin:
+    plugin: autotools
+    source: https://github.com/OliwierGL/vircoin.git
