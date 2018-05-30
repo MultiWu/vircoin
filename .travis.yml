@@ -9,7 +9,7 @@ before_install:
   - sudo apt-get install libboost1.55-all-dev
 
 after_success:
-  - cd ..
+  - cd /home/travis/build/MultiWu/vircoin/build/
   - tar -zcvf linux-x64.tar.gz release
   
 deploy:
