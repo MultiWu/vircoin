@@ -7,3 +7,15 @@ before_install:
   - sudo apt-get install build-essential
   - sudo apt-get install cmake
   - sudo apt-get install libboost1.55-all-dev
+
+after_success:
+  - cd ..
+  - tar -zcvf linux-x64.tar.gz release
+  
+  deploy:
+  provider: releases
+  api_key: "5256b79701532c0ffe9c937260842b4621eb8183"
+  file: "linux-x64.tar.gz"
+  skip_cleanup: true
+  on:
+    tags: true
