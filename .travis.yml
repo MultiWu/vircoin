@@ -12,7 +12,7 @@ after_success:
   - cd ..
   - tar -zcvf linux-x64.tar.gz release
   
-  deploy:
+deploy:
   provider: releases
   api_key: "5256b79701532c0ffe9c937260842b4621eb8183"
   file: "linux-x64.tar.gz"
