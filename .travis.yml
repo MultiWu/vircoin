@@ -17,5 +17,4 @@ deploy:
   api_key: "a3e037077c67d291caa5991da4e4837651cbf6dc"
   file: "linux-x64.tar.gz"
   skip_cleanup: true
-  on:
-    tags: true
+  draft: true
