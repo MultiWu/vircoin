@@ -6,7 +6,8 @@ before_install:
   - sudo apt-get install qt5-default
   - sudo apt-get install build-essential
   - sudo apt-get install cmake
-  - sudo apt-get install libboost1.65-all-dev
+  - sudo add-apt-repository universe
+  - sudo apt-get install libboost1.55-all-dev
 
 after_success:
   - cd /home/travis/build/MultiWu/vircoin/build/
