@@ -16,7 +16,7 @@ after_success:
   
 deploy:
   provider: releases
-  api_key: "a3e037077c67d291caa5991da4e4837651cbf6dc"
+  api_key: "e0ed20714869a9435460c34c061037e7c6377f90"
   file: "linux-x64.tar.gz"
   skip_cleanup: true
   draft: true
